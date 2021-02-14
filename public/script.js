@@ -9,6 +9,7 @@ const tempElement=document.querySelector('[data-temperature]');
 const humidityElement=document.querySelector('[data-Humidity]');
 
 
+
 button.addEventListener('click',function getData(){
   fetch(`http://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}&appid=265ed39b19667fd477c97a158e012bfa&units=metric`)
   .then(res=> {
