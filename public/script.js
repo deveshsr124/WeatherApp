@@ -1,4 +1,3 @@
-
 const iconContainer=document.querySelector('.icon-container');
 const inputValue = document.getElementById('city-search');
 const button=document.querySelector('.submit-btn');
