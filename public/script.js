@@ -11,7 +11,7 @@ const humidityElement=document.querySelector('[data-Humidity]');
 
 
 button.addEventListener('click',function getData(){
-  const api=`http://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}&appid=265ed39b19667fd477c97a158e012bfa&units=metric`;
+  const api=`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}&appid=265ed39b19667fd477c97a158e012bfa&units=metric`;
   fetch(api)
   .then(res=> {
     return res.json()
